@@ -9,7 +9,7 @@ public class SurveyApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        Mobinsight.initialize(getApplicationContext(), "0");
+        Mobinsight.initialize(getApplicationContext(), getApplicationContext().getPackageName());        
     }
 
 }
